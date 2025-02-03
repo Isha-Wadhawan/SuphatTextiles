@@ -1,0 +1,136 @@
+ /* body {
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+    background-size: 200px;
+    background-position: center;
+    color: #000000;
+  }
+
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+    color: rgb(17, 3, 69);
+    font-size: 20px;
+  }
+
+p{
+  font-size: 15px;
+/* } */
+  /* .image-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .image-container-img {
+    border-radius: 4px; 
+    padding: 5px;
+    height: 300px; 
+    width: 400px; 
+  }
+  
+  .bounce {
+      margin-top: 50px;
+      font-size: 4rem;
+      background-color: rgb(29, 13, 88);
+      height:100%;
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e);
+  }
+  .bounce span {
+      display: inline-flex;
+      color: #78c2e4; 
+      font-family: "Play", sans-serif;
+    
+ }  */ 
+
+ /* styles.css */
+
+/* Container for the entire About Us page */
+
+  
+.container {
+  margin: 80px;
+}
+
+
+.image-container {
+  /* background-image: url('/images/background.jpg');  */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+
+
+/* h3.bounce span {
+  animation: bounce 2s infinite;
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 2em;
+} */
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Container for text content */
+/* .container {
+  padding: 20px;
+} */
+
+/* Individual sections */
+.image-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.col-md-6 {
+  flex: 1;
+}
+
+/* Images within text sections */
+.image-container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjust the text color, font size, and other styles as needed */
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/* Image size */
+.image-container-img img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,48 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .product-card p {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .product-card a {
+    display: block;
+    background-color: #25d366; /* Green color for WhatsApp button */
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .product-card a:hover {
+    background-color: #128c7e; /* Darker shade of green on hover */
+  }
+  
+  /* Media Query for smaller screens */
+  @media screen and (max-width: 600px) {
+    .product-card {
+      width: 100%;
+    }
+  }
+  

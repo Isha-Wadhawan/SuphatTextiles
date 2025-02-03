@@ -1,0 +1,72 @@
+.emptyCart {
+    margin: auto;
+    text-align: center;
+    padding: 10vmax;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .emptyCart > svg {
+    font-size: 5vmax;
+    color: tomato;
+  }
+  .emptyCart > p {
+    font-size: 2vmax;
+  }
+  .emptyCart > a {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    padding: 1vmax 3vmax;
+    cursor: pointer;
+    font: 400 1vmax "Roboto";
+    text-decoration: none;
+  }
+  
+  .cartPage {
+    padding: 5vmax;
+  }
+  
+  .cartHeader {
+    background-color: tomato;
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+    color: white;
+    display: grid;
+    font: 300 0.7vmax "Roboto";
+    justify-content: center;
+  }
+  .cartHeader > p {
+    margin: 10px;
+    font-size: 20px;
+   
+  }
+  .cartHeader > p:last-child {
+    text-align: end;
+  }
+  
+  .cartContainer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .cartPage {
+      padding: 0;
+      min-height: 60vh;
+    }
+  
+    .cartHeader {
+      width: 100%;
+      font: 300 1.8vmax "Roboto";
+    }
+  
+    .cartContainer {
+      width: 100%;
+    }
+  }

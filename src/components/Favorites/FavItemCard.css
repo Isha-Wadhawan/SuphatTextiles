@@ -1,0 +1,55 @@
+.CartItemCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.CartItemCard > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.CartItemCard > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.CartItemCard > div > a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.CartItemCard > div > p {
+  color: #e74c3c;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.CartItemCard > div > p:hover {
+  color: #c0392b;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .CartItemCard {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .CartItemCard > img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+}

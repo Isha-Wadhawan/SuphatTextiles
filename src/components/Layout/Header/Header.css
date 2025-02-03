@@ -1,0 +1,119 @@
+
+/* Header > Nav */
+/* Header.css */
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.logo h2 span {
+  font-size: 3.5rem;
+}
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 120px;
+}
+
+.logo img {
+  width: 50px; 
+  height: 50px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav ul li a:hover {
+  color: rgb(168, 168, 168);
+}
+
+
+/* ----------------------------------------------------------------Profile------------------------------------------------------------------- */
+
+.profile-icon {
+  top: 4%;
+  position: fixed;
+  margin-left:93% ;
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.profile-icon:hover {
+  color: #2980b9; /* Change background color on hover */
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.profile-links {
+  position: fixed;
+  margin-left:92% ;
+  top: 13%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.profile-icon:hover + .profile-links, 
+.profile-links:hover {
+    display: flex; /* Show links on hover */
+
+}
+.profile-links ul {
+  list-style: none;
+}
+.profile-links ul li a {
+  padding: 12px;
+  font-size: smaller;
+  text-decoration: none;
+  font-size: smaller;
+  text-decoration: none;
+  color: #000000;
+  transition: background-color 0.3s;
+}
+
+.profile-links ul li a:hover {
+  color: #7b7979; /* Change link background color on hover */
+}
